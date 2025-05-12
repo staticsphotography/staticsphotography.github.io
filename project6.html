@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Car Photography Portfolio by Isaiah Evans"/>
+  <title>Isaiah Evans | Car Photography Portfolio</title>
+  <link rel="stylesheet" href="formatting.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      border-bottom: 2px solid orange;
+    }
+
+    .logo img {
+      max-height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: orange;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ffa500d1;
+    }
+
+    .features-grid {
+      display: grid;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .feature-item {
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .feature-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid orange;
+    }
+
+    #timer {
+      color: orange;
+      font-weight: bold;
+    }
+	
+	  /* === PHOTO GALLERY STYLES === */
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .photo-gallery img:hover {
+    transform: scale(1.02);
+  }
+
+  .photo-gallery img.horizontal {
+    grid-column: span 2;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/Logo.jpg" alt="Isaiah Evans Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+  <h2 style="text-align:center;">Project 6: 2014 SCION FRS</h2>
+
+  <section class="photo-gallery">
+    <!-- Horizontal images -->
+    <img src="images/project6.jpg" class="horizontal" alt="Horizontal 1" />
+    <img src="images/project6-h2.jpg" class="horizontal" alt="Horizontal 2" />
+
+
+
+    <!-- Vertical images -->
+    <img src="images/project6-v1.jpg" class="vertical" alt="Vertical 1" />
+    <img src="images/project6-v2.jpg" class="vertical" alt="Vertical 2" />
+    <img src="images/project6-v3.jpg" class="vertical" alt="Vertical 3" />
+    <img src="images/project6-v4.jpg" class="vertical" alt="Vertical 4" />
+    <img src="images/project6-v5.jpg" class="vertical" alt="Vertical 5" />
+    <img src="images/project6-v6.jpg" class="vertical" alt="Vertical 6" />
+    <img src="images/project6-v7.jpg" class="vertical" alt="Vertical 7" />
+    <img src="images/project6-v8.jpg" class="vertical" alt="Vertical 8" />
+    <img src="images/project6-v9.jpg" class="vertical" alt="Vertical 9" />
+	<img src="images/project6-v10.jpg" class="vertical" alt="Vertical 10" />
+	<img src="images/project6-v11.jpg" class="vertical" alt="Vertical 11" />
+	<img src="images/project6-v12.jpg" class="vertical" alt="Vertical 12" />
+	<img src="images/project6-v13.jpg" class="vertical" alt="Vertical 13" />
+	<img src="images/project6-v14.jpg" class="vertical" alt="Vertical 14" />
+  </section>
+</main>

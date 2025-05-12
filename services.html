@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography Services by Isaiah Evans">
+    <title>Services | Isaiah Evans</title>
+    <link rel="stylesheet" href="formatting.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #000;
+            border-bottom: 2px solid orange;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-item {
+            background-color: #2e2e2e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .service-item h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .cta-center {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            background-color: orange;
+            color: black;
+            padding: 12px 25px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ffa500d1;
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 1rem;
+            border-top: 2px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo.jpg" alt="Isaiah Evans Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Photography Services</h1>
+        <p>High-quality automotive photography tailored to your needs.</p>
+
+        <section class="services-grid">
+            <div class="service-item">
+                <h2>Individual Car Shoots</h2>
+                <p>Capture your personal vehicle in stunning detail with custom backdrops and lighting.</p>
+            </div>
+            <div class="service-item">
+                <h2>Dealership Packages</h2>
+                <p>Professional listings for inventory that boost buyer interest and online engagement.</p>
+            </div>
+            <div class="service-item">
+                <h2>Car Show Coverage</h2>
+                <p>Full event documentation from start to finish, with an emphasis on standout builds.</p>
+            </div>
+            <div class="service-item">
+                <h2>Editing & Retouching</h2>
+                <p>Expert photo editing to enhance colors, lighting, reflections, and remove imperfections.</p>
+            </div>
+        </section>
+
+        <div class="cta-center">
+            <a href="contact.html" class="cta-button">Book a Session</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Isaiah Evans | Car Photography Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

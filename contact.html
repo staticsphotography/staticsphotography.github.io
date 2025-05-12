@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Isaiah Evans - Car Photography"/>
+  <title>Contact | Isaiah Evans</title>
+  <link rel="stylesheet" href="formatting.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      border-bottom: 2px solid orange;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #2e2e2e;
+      color: white;
+      font-size: 1rem;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #bbb;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      background-color: orange;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffa500d1;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid orange;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/Logo.jpg" alt="Isaiah Evans Logo" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Me</h1>
+    <form action="#" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Your Email" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Isaiah Evans | Car Photography Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

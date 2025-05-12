@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Photography Portfolio by Isaiah Evans" />
+  <title>Isaiah Evans | Portfolio</title>
+  <link rel="stylesheet" href="formatting.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      border-bottom: 2px solid orange;
+    }
+
+    .logo h2 a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: orange;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ffa500d1;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .project {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .project-title {
+      margin-top: 0.75rem;
+      font-weight: bold;
+      color: orange;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid orange;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2><a href="index.html">Isaiah's Photography</a></h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+		 <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>My Photography Portfolio</h1>
+      <p>Explore my work capturing the beauty of automobiles.</p>
+      <a href="contact.html" class="cta-button">Contact Me</a>
+    </section>
+
+    <section class="gallery-grid">
+      <a href="project1.html" class="project">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <div class="project-title">Project 1</div>
+      </a>
+      <a href="project2.html" class="project">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <div class="project-title">Project 2</div>
+      </a>
+      <a href="project3.html" class="project">
+        <img src="images/project3.jpg" alt="Project 3" />
+        <div class="project-title">Project 3</div>
+      </a>
+      <a href="project4.html" class="project">
+        <img src="images/project4.jpg" alt="Project 4" />
+        <div class="project-title">Project 4</div>
+      </a>
+      <a href="project5.html" class="project">
+        <img src="images/project5.jpg" alt="Project 5" />
+        <div class="project-title">Project 5</div>
+      </a>
+      <a href="project6.html" class="project">
+        <img src="images/project6.jpg" alt="Project 6" />
+        <div class="project-title">Project 6 </div>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Isaiah Evans | Car Photography Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
